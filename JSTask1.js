@@ -1,3 +1,13 @@
+// const products = [
+//     {productCode:1, itemName:'TV'}, {productCode:2, itemName:'Fridge'}, {productCode:3, itemName:'Phone'}, {productCode:4, itemName:'Washing Machine'}, {productCode:5, itemName:'AC'},
+//     ];
+//     const newProducts = [
+//     {productCode:6, itemName:'Tablet'}, {productCode:3, itemName:'Phone'}, {productCode:7, itemName:'Keyboard'}, {productCode:5, itemName:'AC'}, {productCode:8, itemName:'Mouse'},
+//     ];
+//     // Create a new array having unique products from
+//     // products & newProducts
+//     const uniqueProducts = []; ??
+
 const products = [
     {productCode:1, itemName:'TV'},
     {productCode:2, itemName:'Fridge'},
