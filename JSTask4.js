@@ -19,7 +19,6 @@
 // { department: ["Computer Science","Electronics"] }, { college: ["University College Kerala"] }
 // ];
 
-let seen = new Set();
 let array = [
             {section: "A"},
             {section: "B"},
@@ -28,4 +27,12 @@ let array = [
             {department: "Computer Science"},
             {college: "University College Kerala"}];
 
-let group = groupBy('section');
+let result = array.reduce(function(obj, current){
+    Object.keys(current).forEach(function(key){
+        obj[key] = obj[key] || [];
+        obj[key] = Array.isArray(obj[key]) ? obj[key]:[obj[key]];
+        obj[key].push(current[key]);
+    });
+    return obj;
+});
+console.log(result);
